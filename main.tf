@@ -3,4 +3,10 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 
   tags = var.tags
+
+  timeouts = {
+    create = "5m",
+    update = "5m",
+    delete = "5m",
+  }
 }
