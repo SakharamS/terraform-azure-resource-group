@@ -4,9 +4,9 @@ resource "azurerm_resource_group" "rg" {
 
   tags = var.tags
 
-  timeouts = {
-    create = "5m",
-    update = "5m",
-    delete = "5m",
+  timeouts {
+    create = "5m"
+    update = "5m"
+    delete = "5m"
   }
 }
